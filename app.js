@@ -58,7 +58,17 @@
     {title:"Incidencia durante un ensayo",desc:"Un cambio de última hora provoca retrasos y comentarios entre los participantes.",choices:[{label:"Reorganizar y pedir disculpas",text:"La respuesta responsable reduce el malestar.",money:-70,rep:4},{label:"Seguir con el plan original",text:"Se mantiene el plan, aunque quedan molestias.",money:0,rep:-1},{label:"Culpar públicamente a los participantes",text:"La tensión aumenta y la confianza cae.",money:0,rep:-7}]},
     {title:"Oferta de un taller de imaginería",desc:"Un taller ofrece una pieza de catálogo a buen precio, pero la tesorería debe valorar la inversión.",choices:[{label:"Comprar imagen de nivel básico",text:"Se incorpora una talla sencilla al patrimonio.",money:-4200,rep:2,add:"cristo-basico"},{label:"Pedir presupuesto detallado",text:"Se estudia la propuesta sin comprometer fondos.",money:-80,rep:1},{label:"Comprar sin revisar las cuentas",text:"La decisión precipitada genera críticas por la gestión económica.",money:0,rep:-5}]},
     {title:"Campaña solidaria del barrio",desc:"Una asociación vecinal propone colaborar en una recogida de alimentos.",choices:[{label:"Colaborar con organización y difusión",text:"La hermandad refuerza su compromiso social.",money:-250,rep:8},{label:"Aportar una cantidad modesta",text:"La hermandad participa dentro de sus posibilidades.",money:-75,rep:4},{label:"Declinar de malas formas",text:"La respuesta perjudica la relación con el barrio.",money:0,rep:-5}]},
-    {title:"Desacuerdo en la junta",desc:"La junta está dividida sobre una compra importante para el patrimonio.",choices:[{label:"Convocar reunión y votar",text:"La decisión se toma de forma transparente.",money:-30,rep:4},{label:"Aplazar para estudiar las cuentas",text:"Se gana tiempo y se evita una decisión precipitada.",money:0,rep:2},{label:"Imponer la decisión sin escuchar",text:"La falta de diálogo provoca desconfianza.",money:0,rep:-6}]}
+    {title:"Desacuerdo en la junta",desc:"La junta está dividida sobre una compra importante para el patrimonio.",choices:[{label:"Convocar reunión y votar",text:"La decisión se toma de forma transparente.",money:-30,rep:4},{label:"Aplazar para estudiar las cuentas",text:"Se gana tiempo y se evita una decisión precipitada.",money:0,rep:2},{label:"Imponer la decisión sin escuchar",text:"La falta de diálogo provoca desconfianza.",money:0,rep:-6}]},
+    {title:"Quejas por falta de comunicación",desc:"Varios hermanos afirman que se enteraron tarde de un culto y se han quejado públicamente.",choices:[{label:"Disculparse y mejorar los avisos",text:"La junta reconoce el fallo y organiza un calendario de comunicaciones.",money:-70,rep:2},{label:"Publicar un aviso general",text:"Se corrige parte del problema, pero persiste el malestar.",money:0,rep:-2},{label:"Ignorar las quejas",text:"Los hermanos sienten que no se les escucha.",money:0,rep:-7}]},
+    {title:"Polémica por un gasto",desc:"Se difunde que la hermandad ha gastado demasiado en un proyecto mientras hay cuotas pendientes.",choices:[{label:"Publicar las cuentas y explicar el proyecto",text:"La transparencia ayuda a recuperar parte de la confianza.",money:0,rep:2},{label:"Revisar el presupuesto y recortar",text:"Se ajusta el gasto y se reduce el malestar.",money:-120,rep:1},{label:"Responder con críticas",text:"La discusión se amplifica y empeora la imagen pública.",money:0,rep:-8}]},
+    {title:"Conflicto entre costaleros",desc:"Un desacuerdo en un ensayo ha generado comentarios tensos entre varios participantes.",choices:[{label:"Mediar y convocar una reunión",text:"La junta escucha a ambas partes y acuerda unas pautas.",money:-60,rep:3},{label:"Cambiar la organización sin explicaciones",text:"El ensayo sigue adelante, pero quedan dudas.",money:0,rep:-2},{label:"Tomar partido públicamente",text:"Parte del grupo considera injusta la decisión.",money:0,rep:-7}]},
+    {title:"Críticas por un enser descuidado",desc:"Una fotografía muestra un enser en mal estado durante un acto y llegan críticas de hermanos y vecinos.",choices:[{label:"Repararlo y explicar el plan de conservación",text:"La respuesta demuestra responsabilidad y mejora la confianza.",money:-260,rep:3},{label:"Retirarlo temporalmente",text:"Se evita que el problema continúe, aunque no se aclara del todo.",money:0,rep:-1,wear:3},{label:"Restarle importancia",text:"La falta de cuidado genera nuevas críticas.",money:0,rep:-6}]},
+    {title:"Malentendido en redes sociales",desc:"Una publicación de la hermandad se interpreta como una crítica a otra corporación y se extiende el malestar.",choices:[{label:"Aclarar y pedir disculpas",text:"La aclaración reduce la tensión entre las hermandades.",money:-35,rep:2},{label:"Editar la publicación sin explicar nada",text:"El contenido desaparece, pero persisten las dudas.",money:0,rep:-2},{label:"Entrar en una discusión pública",text:"La controversia aumenta y afecta a la imagen de la hermandad.",money:0,rep:-9}]},
+    {title:"Retraso en una acción solidaria",desc:"La entrega de alimentos y productos básicos se retrasa por una mala coordinación.",choices:[{label:"Reorganizar la entrega y avisar a las familias",text:"La hermandad resuelve el problema y demuestra compromiso.",money:-110,rep:2},{label:"Entregar lo disponible y completar después",text:"La actividad sale adelante, aunque no como estaba prevista.",money:-40,rep:0},{label:"Cancelar sin avisar",text:"La falta de comunicación provoca desconfianza en el barrio.",money:0,rep:-8}]},
+    {title:"Rumor sobre favoritismos",desc:"Circula el rumor de que algunas personas reciben un trato preferente en la asignación de puestos.",choices:[{label:"Publicar criterios claros y revisar las asignaciones",text:"La transparencia reduce las sospechas.",money:-45,rep:3},{label:"Hablar solo con los afectados",text:"Se calma parte del malestar, pero no todo el mundo recibe una explicación.",money:0,rep:-1},{label:"No dar explicaciones",text:"El rumor gana fuerza y perjudica la confianza.",money:0,rep:-7}]},
+    {title:"Descoordinación en un culto",desc:"Por un error de organización faltan algunos enseres y el acto comienza tarde.",choices:[{label:"Resolverlo y revisar el protocolo",text:"La junta asume el error y evita que vuelva a ocurrir.",money:-85,rep:2},{label:"Resolverlo sobre la marcha",text:"El culto se celebra, pero la desorganización se hace notar.",money:0,rep:-2},{label:"Culpar a un voluntario",text:"La reacción se considera injusta y aumenta el malestar.",money:0,rep:-8}]},
+    {title:"Descontento por las cuotas",desc:"Varios hermanos consideran que la cuota no se ha explicado suficientemente y cuestionan la gestión económica.",choices:[{label:"Presentar un resumen de ingresos y gastos",text:"Las cuentas claras mejoran la confianza.",money:0,rep:3},{label:"Convocar una reunión informativa",text:"Se aclaran algunas dudas, aunque no acuden todos.",money:-35,rep:1},{label:"Descartar las preguntas",text:"Los hermanos sienten que sus preocupaciones no importan.",money:0,rep:-6}]},
+    {title:"Incidencia en la estación de penitencia",desc:"Un fallo de coordinación provoca un parón y varios comentarios críticos al terminar el recorrido.",choices:[{label:"Revisar horarios y ensayar el recorrido",text:"La hermandad aprende del incidente y prepara mejoras.",money:-150,rep:2},{label:"Agradecer la paciencia y seguir igual",text:"El incidente queda atrás, pero no se corrigen sus causas.",money:0,rep:-2},{label:"Negar que haya ocurrido un problema",text:"La falta de autocrítica empeora la percepción pública.",money:0,rep:-8}]}
   ];
   const activities = [
     {name:"Limpieza de candelería",kind:"Priostía",cost:25,rep:2,season:"cuaresma"},
@@ -83,11 +93,11 @@
       {id:"libro-reglas",name:"Libro de reglas",category:"Enseres",icon:"📕",quality:90,condition:92,bought:"Patrimonio inicial",price:0},
       {id:"varas-iniciales",name:"Varas de representación",category:"Enseres",icon:"⚜️",quality:75,condition:80,bought:"Patrimonio inicial",price:0},
       {id:"candeleria-inicial",name:"Candelería de cultos",category:"Candelería",icon:"🕯️",quality:78,condition:85,bought:"Patrimonio inicial",price:0}
-    ],church:{name:"Iglesia asignada",type:"assigned",owned:false},house:{type:"none",name:"Sin casa hermandad",level:0},procession:{route:"Iglesia de salida → calles del barrio → plaza principal → regreso a la iglesia",stops:"",startTime:"16:00",returnTime:"01:00",distance:6,plannedYear:null,planned:false},transactions:[{concept:"Tesorería inicial",amount:12000,type:"saldo",date:today.toISOString()}],events:[],eventHistory:[],eventCooldowns:{},activity:["Se ha iniciado una nueva partida."],calendar:[],requests:[],seenRequests:[],lastEventDay:"",lastManualEventDay:"",lastEconomyMonth:"",lastMonthlyReportKey:"",dayCount:0,playing:false,saveId:"",gameName:"Hermandad del Consuelo"};
+    ],church:{name:"Iglesia asignada",type:"assigned",owned:false},house:{type:"none",name:"Sin casa hermandad",level:0},procession:{route:"Iglesia de salida → calles del barrio → plaza principal → regreso a la iglesia",stops:"",startTime:"16:00",returnTime:"01:00",distance:6,plannedYear:null,planned:false},transactions:[{concept:"Tesorería inicial",amount:12000,type:"saldo",date:today.toISOString()}],events:[],eventHistory:[],eventCooldowns:{},activity:["Se ha iniciado una nueva partida."],calendar:[],requests:[],seenRequests:[],lastEventDay:"",lastManualEventDay:"",lastEconomyMonth:"",lastMonthlyReportKey:"",siteSlips:[],dayCount:0,playing:false,saveId:"",gameName:"Hermandad del Consuelo"};
   }
   function getSaves(){try{const raw=localStorage.getItem(SAVES_KEY);return raw?JSON.parse(raw):[];}catch(e){return [];}}
   function putSaves(list){localStorage.setItem(SAVES_KEY,JSON.stringify(list));}
-  function summarizeState(s){const d=new Date(s.date);return {id:s.saveId||("partida-"+Date.now()),name:s.gameName||"Hermandad del Consuelo",date:s.date,balance:s.balance,brothers:(s.brothers||[]).length,reputation:s.reputation||0,inventory:(s.inventory||[]).length,updatedAt:new Date().toISOString(),data:s};}
+  function summarizeState(s){const d=new Date(s.date);return {id:s.saveId||("partida-"+Date.now()),name:s.gameName||"Hermandad del Consuelo",date:s.date,balance:s.balance,brothers:(s.brothers||[]).filter(isActiveBrother).length,reputation:s.reputation||0,inventory:(s.inventory||[]).length,updatedAt:new Date().toISOString(),data:s};}
   function saveCurrentSlot(){if(!state)return;const list=getSaves();if(!state.saveId)state.saveId="partida-"+Date.now()+"-"+Math.random().toString(36).slice(2,7);if(!state.gameName)state.gameName="Hermandad del Consuelo";const item=summarizeState(state);const idx=list.findIndex(x=>x.id===state.saveId);if(idx>=0)list[idx]=item;else list.unshift(item);putSaves(list);localStorage.setItem(SAVE_KEY,JSON.stringify(state));renderSavedGames();}
   function migrateOldSave(){try{const old=localStorage.getItem(SAVE_KEY);const list=getSaves();if(old&&!list.length){const s=JSON.parse(old);if(s&&s.date){s.saveId="partida-migrada-"+Date.now();s.gameName=s.gameName||"Hermandad del Consuelo";const item=summarizeState(s);item.id=s.saveId;putSaves([item]);}}}catch(e){}}
   function renderSavedGames(){const host=$("lista-partidas");if(!host)return;const list=getSaves().sort((a,b)=>new Date(b.updatedAt||b.date)-new Date(a.updatedAt||a.date));if(!list.length){host.innerHTML='<div class="saved-games-empty">Todavía no tienes partidas guardadas. Pulsa «Nueva partida» para comenzar.</div>';return;}host.innerHTML=list.map(s=>`<article class="saved-game-card"><h4>${esc(s.name||"Hermandad del Consuelo")}</h4><div class="saved-game-meta"><span>Fecha de juego<br><strong>${esc(dateText(new Date(s.date)))}</strong></span><span>Tesorería<br><strong>${money(Number(s.balance)||0)}</strong></span><span>Hermanos<br><strong>${Number(s.brothers)||0}</strong></span><span>Patrimonio<br><strong>${Number(s.inventory)||0} bienes</strong></span></div><div class="saved-game-actions"><button class="btn primary" data-load-save="${esc(s.id)}">Continuar</button><button class="btn ghost" data-delete-save="${esc(s.id)}">Eliminar</button></div></article>`).join("");}
@@ -95,10 +105,36 @@
   function deleteSaveById(id){const s=getSaves().find(x=>x.id===id);if(!s)return;if(!confirm(`¿Eliminar la partida «${s.name||"Hermandad del Consuelo"}»? Esta acción no se puede deshacer.`))return;putSaves(getSaves().filter(x=>x.id!==id));if(state&&state.saveId===id){state=null;if(playTimer){clearInterval(playTimer);playTimer=null;}showScreen("inicio");}renderSavedGames();toast("Partida eliminada.");}
   function save(){try{localStorage.setItem(SAVE_KEY,JSON.stringify(state));if(state)saveCurrentSlot();$("btn-continuar")&&($("btn-continuar").disabled=false);$("estado-guardado").textContent="Tus partidas se guardan en este dispositivo.";}catch(e){toast("No se pudo guardar la partida.");}}
   function load(){try{const raw=localStorage.getItem(SAVE_KEY);if(!raw)return false;state=JSON.parse(raw);ensureStateDefaults();return !!state.date;}catch(e){return false;}}
-  function ensureStateDefaults(){if(!state)return;state.events=Array.isArray(state.events)?state.events:[];state.eventHistory=Array.isArray(state.eventHistory)?state.eventHistory:[];state.eventCooldowns=state.eventCooldowns||{};state.activity=Array.isArray(state.activity)?state.activity:[];state.transactions=Array.isArray(state.transactions)?state.transactions:[];state.requests=Array.isArray(state.requests)?state.requests:[];state.difficulty=state.difficulty||"equilibrada";state.lastManualEventDay=state.lastManualEventDay||"";if(typeof state.lastElectionMonth!=="number"){const d=new Date(state.date);state.lastElectionMonth=d.getFullYear()*12+d.getMonth();}if(typeof state.electionDue!=="boolean")state.electionDue=false;}
+  function ensureStateDefaults(){
+    if(!state)return;
+    state.events=Array.isArray(state.events)?state.events:[];
+    state.eventHistory=Array.isArray(state.eventHistory)?state.eventHistory:[];
+    state.eventCooldowns=state.eventCooldowns||{};
+    state.activity=Array.isArray(state.activity)?state.activity:[];
+    state.transactions=Array.isArray(state.transactions)?state.transactions:[];
+    state.requests=Array.isArray(state.requests)?state.requests:[];
+    state.brothers=Array.isArray(state.brothers)?state.brothers:[];
+    state.siteSlips=Array.isArray(state.siteSlips)?state.siteSlips:[];
+    state.difficulty=state.difficulty||"equilibrada";
+    state.lastManualEventDay=state.lastManualEventDay||"";
+    if(typeof state.lastElectionMonth!=="number"){const d=new Date(state.date);state.lastElectionMonth=d.getFullYear()*12+d.getMonth();}
+    if(typeof state.electionDue!=="boolean")state.electionDue=false;
+    ensureBrotherIds();
+  }
+  function ensureBrotherIds(){
+    if(!state||!Array.isArray(state.brothers))return;
+    const used=new Set();
+    state.brothers.forEach((b,i)=>{
+      if(!b.id){const base=String(b.name||"hermano").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"hermano";b.id=`h-${base}-${i+1}`;}
+      while(used.has(b.id))b.id+=`-${i+1}`;used.add(b.id);
+      if(!Number.isFinite(Number(b.quotaDebtMonths)))b.quotaDebtMonths=0;
+      if(!b.quotaStatus)b.quotaStatus=Number(b.quotaDebtMonths)>0?"Cuota pendiente":"Al corriente";
+    });
+  }
+  function isActiveBrother(b){return /activ[oa]/i.test(b.status||"")&&!/expuls/i.test(b.status||"");}
   function toast(message){const el=$("toast");el.textContent=message;el.classList.add("show");clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.classList.remove("show"),2800);}
-  function log(message){state.activity.unshift({date:state.date,text:message});state.activity=state.activity.slice(0,12);}
-  function addTransaction(concept,amount,type){state.balance=Math.round((state.balance+amount)*100)/100;state.transactions.unshift({concept,amount,type,date:state.date});}
+  function log(message,date=state.date){state.activity.unshift({date,text:message});state.activity=state.activity.slice(0,12);}
+  function addTransaction(concept,amount,type,date=state.date){state.balance=Math.round((state.balance+amount)*100)/100;state.transactions.unshift({concept,amount,type,date:new Date(date).toISOString()});}
   function showScreen(id){$("pantalla-inicio").classList.toggle("hidden",id!=="inicio");$("pantalla-juego").classList.toggle("hidden",id!=="juego");}
   function section(name){document.querySelectorAll(".nav-btn").forEach(b=>b.classList.toggle("active",b.dataset.section===name));document.querySelectorAll(".section").forEach(s=>s.classList.toggle("active",s.id==="section-"+name));renderSection(name);}
   function phase(d){const easter=easterDate(d.getFullYear()), ash=new Date(easter);ash.setDate(ash.getDate()-46);const palm=new Date(easter);palm.setDate(palm.getDate()-7);if(d>=ash&&d<easter)return {name:"Cuaresma y Semana Santa",cuaresma:true,description:"Tiempo de cultos, preparación de enseres y organización de la estación de penitencia."};if(d>=easter&&d<new Date(easter.getFullYear(),easter.getMonth()+1,easter.getDate()))return {name:"Pascua",cuaresma:false,description:"Tiempo de balance, agradecimiento y revisión del trabajo realizado."};if(d.getMonth()>=0&&d.getMonth()<=1)return {name:"Preparación del año",cuaresma:false,description:"Organiza el presupuesto y planifica los cultos del año."};return {name:"Tiempo ordinario",cuaresma:false,description:"Mantén el patrimonio, atiende a los hermanos y prepara los próximos compromisos."};}
@@ -107,8 +143,8 @@
   function startPlayback(){if(!state)return;if(state.events.some(e=>!e.resolved)){toast("Resuelve primero el evento pendiente.");return;}state.playing=true;updatePlayButton();toast("El tiempo avanza automáticamente.");if(playTimer)clearInterval(playTimer);playTimer=setInterval(()=>{if(!state||!state.playing)return;if(state.events.some(e=>!e.resolved)){stopPlayback();return;}advanceDay(true);},2200);}
   function togglePlayback(){if(state.playing)stopPlayback();else startPlayback();save();updatePlayButton();}
   function updatePlayButton(){const b=$("btn-play");if(!b)return;b.textContent=state&&state.playing?"Ⅱ Pausar":"▶ Play";b.classList.toggle("primary",!state||!state.playing);b.classList.toggle("secondary",!!(state&&state.playing));}
-  function renderTop(){const d=new Date(state.date);$("nombre-hermandad").textContent=state.gameName||"Hermandad del Consuelo";$("fecha-actual").textContent=dateText(d);$("saldo-cabecera").textContent=money(state.balance);$("total-hermanos").textContent=state.brothers.length;$("reputacion").textContent=state.reputation+"/100";$("saldo-tienda").textContent=money(state.balance)+" disponibles";$("saldo-grande").textContent=money(state.balance);$("eventos-badge").textContent=state.events.filter(e=>!e.resolved).length;}
-  function renderSummary(){const p=phase(new Date(state.date));const rep=state.reputation;const repLabel=rep>=85?"Prestigio excelente":rep>=70?"Muy buena imagen":rep>=50?"Reputación estable":rep>=30?"Confianza frágil":"Reputación crítica";$("texto-resumen").textContent=`Hoy es ${dateText(new Date(state.date))}. ${p.description} Reputación: ${repLabel} (${rep}/100). Las decisiones de los eventos pueden mejorar o perjudicar la confianza de los hermanos y del barrio.`;$("resumen-cards").innerHTML=[["Hermanos",state.brothers.length,"Personas censadas"],["Tesorería",money(state.balance),"Saldo disponible"],["Patrimonio",state.inventory.length,"Bienes inventariados"],["Reputación",state.reputation+"/100","Confianza de la comunidad"]].map(c=>`<div class="stat-card"><span>${c[0]}</span><strong>${c[1]}</strong><span>${c[2]}</span></div>`).join("");$("proximos-eventos").innerHTML=state.calendar.slice(0,4).map(a=>`<div class="feed-item"><strong>${esc(a.name)}</strong><small>${esc(a.date)} · ${esc(a.kind)}</small></div>`).join("")||'<p class="muted">No hay compromisos próximos. Avanza el día para generar actividad.</p>';$("actividad-reciente").innerHTML=state.activity.slice(0,5).map(a=>`<div class="feed-item">${esc(typeof a==="string"?a:a.text)}<small>${typeof a==="string"?"Registro":dateText(new Date(a.date))}</small></div>`).join("");}
+  function renderTop(){const d=new Date(state.date);$("nombre-hermandad").textContent=state.gameName||"Hermandad del Consuelo";$("fecha-actual").textContent=dateText(d);$("saldo-cabecera").textContent=money(state.balance);$("total-hermanos").textContent=state.brothers.filter(isActiveBrother).length;$("reputacion").textContent=state.reputation+"/100";$("saldo-tienda").textContent=money(state.balance)+" disponibles";$("saldo-grande").textContent=money(state.balance);$("eventos-badge").textContent=state.events.filter(e=>!e.resolved).length;}
+  function renderSummary(){const p=phase(new Date(state.date));const rep=state.reputation;const repLabel=rep>=85?"Prestigio excelente":rep>=70?"Muy buena imagen":rep>=50?"Reputación estable":rep>=30?"Confianza frágil":"Reputación crítica";$("texto-resumen").textContent=`Hoy es ${dateText(new Date(state.date))}. ${p.description} Reputación: ${repLabel} (${rep}/100). Las decisiones de los eventos pueden mejorar o perjudicar la confianza de los hermanos y del barrio.`;$("resumen-cards").innerHTML=[["Hermanos",state.brothers.filter(isActiveBrother).length,"Personas censadas"],["Tesorería",money(state.balance),"Saldo disponible"],["Patrimonio",state.inventory.length,"Bienes inventariados"],["Reputación",state.reputation+"/100","Confianza de la comunidad"]].map(c=>`<div class="stat-card"><span>${c[0]}</span><strong>${c[1]}</strong><span>${c[2]}</span></div>`).join("");$("proximos-eventos").innerHTML=state.calendar.slice(0,4).map(a=>`<div class="feed-item"><strong>${esc(a.name)}</strong><small>${esc(a.date)} · ${esc(a.kind)}</small></div>`).join("")||'<p class="muted">No hay compromisos próximos. Avanza el día para generar actividad.</p>';$("actividad-reciente").innerHTML=state.activity.slice(0,5).map(a=>`<div class="feed-item">${esc(typeof a==="string"?a:a.text)}<small>${typeof a==="string"?"Registro":dateText(new Date(a.date))}</small></div>`).join("");}
   function renderEvents(){const day=state.date.slice(0,10);const count=state.events.filter(e=>String(e.date||"").slice(0,10)===day).length;const btn=$("btn-generar-evento");if(btn){btn.disabled=count>=2;btn.title=count>=2?"Ya has alcanzado el límite de dos eventos hoy.":"Puedes buscar novedades, con un máximo de dos eventos por día.";btn.textContent=count>=2?"Límite diario alcanzado":"Buscar novedades";}$("lista-eventos").innerHTML=state.events.filter(e=>!e.resolved).map(e=>`<article class="event-card"><span class="event-meta">${esc(dateText(new Date(e.date)))}</span><h4>${esc(e.title)}</h4><p>${esc(e.desc)}</p><div class="event-actions">${e.choices.map((c,i)=>`<button class="btn ${i===0?"primary":"secondary"}" data-event="${e.id}" data-choice="${i}">${esc(c.label)}</button>`).join("")}</div></article>`).join("")||'<div class="empty">No hay eventos pendientes. Puedes buscar novedades o avanzar un día.</div>';}
   function daysBetween(dateA,dateB){return Math.floor((new Date(dateA).setHours(12,0,0,0)-new Date(dateB).setHours(12,0,0,0))/86400000);}
   function futureIso(dateISO,days){const d=new Date(dateISO);d.setDate(d.getDate()+days);return d.toISOString();}
@@ -138,7 +174,7 @@
     ev.resolved=true;log(ev.title+": "+c.text);save();renderAll();toast(c.text);
     const resume=resumePlaybackAfterModal;resumePlaybackAfterModal=false;if(resume){const nextPending=state.events.find(e=>!e.resolved);if(nextPending){resumePlaybackAfterModal=true;showEventModal(nextPending);}else startPlayback();}
   }
-  function showMonthlyReport(report){currentMonthlyReport=report;const rows=(report.activities.length?report.activities.map(a=>`<li>${esc(a)}</li>`).join(""):'<li>Sin incidencias destacadas registradas en el mes.</li>');const election=state.electionDue?`<div class="election-panel"><p class="eyebrow">ELECCIONES DE LA HERMANDAD</p><h4>Renovación de la junta</h4><p>Han pasado seis meses desde el último proceso electoral. Elige la línea de gestión para el siguiente mandato.</p><div class="event-actions"><button class="btn primary" data-election-candidate="continuidad">Continuidad <small>+150 € · +4 reputación</small></button><button class="btn secondary" data-election-candidate="renovacion">Renovación <small>+7 reputación · nuevo apoyo</small></button><button class="btn secondary" data-election-candidate="austeridad">Austeridad <small>+300 € · +2 reputación</small></button></div></div>`:'';
+  function showMonthlyReport(report){currentMonthlyReport=report;const rows=(report.activities.length?report.activities.map(a=>`<li>${esc(a)}</li>`).join(""):'<li>Sin incidencias destacadas registradas en el mes.</li>');const election=state.electionDue?`<div class="election-panel"><p class="eyebrow">ELECCIONES DE LA HERMANDAD</p><h4>Renovación de la junta</h4><p>Han pasado dos años desde las últimas elecciones. Elige la línea de gestión para el siguiente mandato.</p><div class="event-actions"><button class="btn primary" data-election-candidate="continuidad">Continuidad <small>+150 € · +4 reputación</small></button><button class="btn secondary" data-election-candidate="renovacion">Renovación <small>+7 reputación · nuevo apoyo</small></button><button class="btn secondary" data-election-candidate="austeridad">Austeridad <small>+300 € · +2 reputación</small></button></div></div>`:'';
     const result=report.electionResult?`<div class="election-result"><h4>Resultado electoral</h4><p>${esc(report.electionResult)}</p></div>`:'';
     openModal(`<div class="monthly-report"><span class="event-meta">CIERRE MENSUAL · ${esc(report.monthName)}</span><h3>Balance de la hermandad</h3><div class="current-balance-box"><span>SALDO ACTUAL</span><strong>${money(state.balance)}</strong></div><div class="monthly-stats"><div><span>Ingresos del mes anterior</span><strong class="success">+${money(report.income)}</strong></div><div><span>Gastos del mes anterior</span><strong class="danger">−${money(report.expenses)}</strong></div><div><span>Balance neto</span><strong class="${report.net>=0?'success':'danger'}">${report.net>=0?'+':'−'}${money(Math.abs(report.net))}</strong></div><div><span>Nuevos hermanos</span><strong>${report.newBrothers.length}</strong></div></div><h4>Altas de hermanos</h4><p>${report.newBrothers.length?report.newBrothers.map(esc).join(', '):'No se registraron nuevas altas el mes pasado.'}</p><h4>Sucesos del mes</h4><ul class="monthly-activity">${rows}</ul>${election}${result}<div class="event-actions"><button class="btn primary" data-monthly-close>Cerrar balance y continuar</button></div></div>`);
   }
@@ -169,6 +205,50 @@
     const bocaBlocked=cooldownLeft>0||usedThisYear>=3;
     box.innerHTML=`<h4>Captación de nuevos hermanos</h4><p class="muted">Invierte en actividades para atraer personas. Los resultados dependen de la reputación y son variables.</p><div class="campaign-grid">${campaigns.map(c=>{const blocked=c.id==="boca"&&bocaBlocked;const status=c.id==="boca"?(usedThisYear>=3?`Límite anual alcanzado (${usedThisYear}/3)`:cooldownLeft>0?`Disponible dentro de ${cooldownLeft} días · ${usedThisYear}/3 este año`:`Disponible · ${usedThisYear}/3 este año`):"";return `<article class="shop-card"><h4>${c.name}</h4><p>${c.desc}</p><p>Coste: <strong>${money(c.cost)}</strong> · Posibles altas: ${c.min}–${c.max}</p>${status?`<p class="muted">${status}</p>`:""}<button class="btn primary" data-campaign="${c.id}" ${blocked?"disabled":""}>${blocked?"No disponible":"Organizar campaña"}</button></article>`;}).join("")}</div>`;
     renderRequest();
+    renderQuotaManagement();
+    renderPapeletas();
+  }
+  function renderQuotaManagement(){
+    const host=$("cuotas-hermanos");if(!host)return;
+    ensureBrotherIds();
+    const pending=state.brothers.filter(b=>isActiveBrother(b)&&(Number(b.quotaDebtMonths)||0)>0);
+    if(!pending.length){host.innerHTML='<div class="empty">No hay cuotas pendientes. Los hermanos activos están al corriente de pago.</div>';return;}
+    host.innerHTML=pending.map(b=>{const months=Math.max(1,Number(b.quotaDebtMonths)||1),amount=months*18;return `<article class="quota-row"><div class="quota-person"><strong>${esc(b.name)}</strong><small>${months} ${months===1?"mes pendiente":"meses pendientes"} · ${money(amount)} por abonar</small></div><div class="quota-actions"><button class="btn secondary" data-quota-pay="${esc(b.id)}">Registrar pago</button><button class="btn danger" data-quota-expel="${esc(b.id)}">Expulsar por impago</button></div></article>`;}).join("");
+  }
+  function registerQuotaPayment(id){
+    const b=state.brothers.find(x=>x.id===id);if(!b||!isActiveBrother(b))return;
+    const months=Math.max(0,Number(b.quotaDebtMonths)||0);if(!months){toast("Este hermano no tiene cuotas pendientes.");return;}
+    const amount=months*18;addTransaction(`Cobro de cuotas atrasadas — ${b.name}`,amount,"ingreso");b.quotaDebtMonths=0;b.quotaStatus="Al corriente";b.lastQuotaMonth=`${new Date(state.date).getFullYear()}-${new Date(state.date).getMonth()+1}`;delete b.quotaDueMonth;
+    log(`Secretaría ha registrado el pago de ${money(amount)} de ${b.name}.`);save();renderAll();toast(`Cuota recibida: ${money(amount)}.`);
+  }
+  function expelBrotherForNonpayment(id){
+    const b=state.brothers.find(x=>x.id===id);if(!b||!isActiveBrother(b)||!(Number(b.quotaDebtMonths)>0))return;
+    if(!confirm(`¿Expulsar a ${b.name} por ${b.quotaDebtMonths} mes(es) de cuotas impagadas?`))return;
+    b.status="Expulsado por impago";b.quotaStatus="Expulsado por impago";state.reputation=Math.max(0,state.reputation-2);log(`${b.name} ha sido expulsado por cuotas impagadas.`);save();renderAll();toast("Baja por impago registrada en Secretaría.");
+  }
+  function renderPapeletas(){
+    const host=$("gestion-papeletas");if(!host)return;
+    ensureBrotherIds();
+    const d=new Date(state.date),year=d.getFullYear(),open=phase(d).cuaresma;
+    const slips=state.siteSlips.filter(s=>Number(s.year)===year);
+    const issued=new Set(slips.map(s=>s.brotherId));
+    const active=state.brothers.filter(isActiveBrother);
+    if(!open){
+      const nextYear=year+(d>=easterDate(year)?1:0);
+      host.innerHTML=`<article class="season-card"><h4>Solicitud de papeletas de sitio cerrada</h4><p>Se abrirá durante la Cuaresma para preparar la estación de penitencia de Semana Santa. Fecha actual: ${esc(dateText(d))}.</p><p class="muted">Última campaña registrada: ${slips.length} papeletas emitidas para ${year}. La próxima apertura será en la Cuaresma de ${nextYear}.</p></article>`;
+      return;
+    }
+    host.innerHTML=`<article class="papeletas-panel"><span class="event-meta">SECRETARÍA · SEMANA SANTA ${year}</span><h4>Solicitud de papeletas de sitio</h4><p>Selecciona a cada hermano activo que vaya a participar en la estación de penitencia. Cada participante debe tener una papeleta individual.</p><div class="papeleta-checklist">${active.map(b=>{const has=issued.has(b.id);return `<label class="papeleta-person ${has?"is-issued":""}"><input type="checkbox" data-papeleta-member="${esc(b.id)}" ${has?"disabled":""}><span><strong>${esc(b.name)}</strong><small>${has?`Papeleta emitida · ${esc(slips.find(s=>s.brotherId===b.id)?.number||"")}`:"Pendiente de solicitud"}</small></span></label>`;}).join("")||'<p class="muted">No hay hermanos activos que puedan solicitar papeleta.</p>'}</div><div class="papeletas-footer"><span>${slips.length} papeletas emitidas · ${active.length} hermanos activos</span><button id="btn-solicitar-papeletas" class="btn primary" ${active.length===0||active.every(b=>issued.has(b.id))?"disabled":""}>Emitir papeletas seleccionadas</button></div></article>`;
+  }
+  function requestPapeletas(){
+    if(!phase(new Date(state.date)).cuaresma){toast("La solicitud de papeletas solo está abierta durante la Cuaresma.");return;}
+    ensureBrotherIds();const year=new Date(state.date).getFullYear();const host=$("gestion-papeletas");const selected=[...host.querySelectorAll('input[data-papeleta-member]:checked')].map(input=>input.dataset.papeletaMember);
+    if(!selected.length){toast("Selecciona al menos un hermano participante.");return;}
+    let issued=0;
+    selected.forEach(id=>{const b=state.brothers.find(x=>x.id===id);if(!b||!isActiveBrother(b)||state.siteSlips.some(s=>Number(s.year)===year&&s.brotherId===id))return;const number=`PS-${year}-${String(state.siteSlips.filter(s=>Number(s.year)===year).length+1).padStart(4,"0")}`;state.siteSlips.push({year,brotherId:id,brotherName:b.name,number,issuedOn:state.date});issued++;});
+    if(!issued){toast("Los hermanos seleccionados ya tienen papeleta o no están activos.");return;}
+    if(!state.procession)state.procession={};state.procession.participatingBrotherIds=state.siteSlips.filter(s=>Number(s.year)===year).map(s=>s.brotherId);
+    log(`Secretaría ha emitido ${issued} papeleta(s) de sitio para la Semana Santa de ${year}.`);save();renderAll();toast(`${issued} papeleta(s) de sitio emitida(s).`);
   }
   function runCampaign(id){
     const campaigns={redes:{name:"Campaña en redes sociales",cost:180,min:1,max:3,rep:1},puertas:{name:"Jornada de puertas abiertas",cost:450,min:2,max:5,rep:4},juvenil:{name:"Captación juvenil y familiar",cost:320,min:1,max:4,rep:3},caridad:{name:"Acción solidaria en el barrio",cost:600,min:2,max:6,rep:7},boca:{name:"Invitar a conocidos",cost:100,min:0,max:1,rep:0}};
@@ -195,26 +275,107 @@
     log(`${c.name}: ${gained} nuevas altas. Gasto: ${money(c.cost)}.`);save();renderAll();toast(`Campaña finalizada: ${gained} nuevos hermanos.`);
   }
   function processMonthlyEconomy(d){
-    const monthKey=`${d.getFullYear()}-${d.getMonth()+1}`;if(state.lastEconomyMonth===monthKey)return null;state.lastEconomyMonth=monthKey;
-    const previousMonth=new Date(d.getFullYear(),d.getMonth()-1,1,12);const py=previousMonth.getFullYear(),pm=previousMonth.getMonth();
+    const monthKey=`${d.getFullYear()}-${d.getMonth()+1}`;
+    if(state.lastEconomyMonth===monthKey)return null;
+    state.lastEconomyMonth=monthKey;
+    const previousMonth=new Date(d.getFullYear(),d.getMonth()-1,1,12);
+    const py=previousMonth.getFullYear(),pm=previousMonth.getMonth();
+    const closingDate=new Date(py,pm+1,0,12,0,0,0);
+    const reportMonthKey=`${py}-${pm+1}`;
     const inPrevMonth=value=>{const dt=new Date(value);return Number.isFinite(dt.getTime())&&dt.getFullYear()===py&&dt.getMonth()===pm;};
-    const previousTransactions=state.transactions.filter(t=>inPrevMonth(t.date)&&!/saldo inicial|tesorería inicial/i.test(t.concept||""));const income=previousTransactions.filter(t=>t.amount>0).reduce((a,t)=>a+t.amount,0);const expenses=previousTransactions.filter(t=>t.amount<0).reduce((a,t)=>a+Math.abs(t.amount),0);const newBrothers=state.brothers.filter(b=>b.joinedAt&&inPrevMonth(b.joinedAt)).map(b=>b.name);
-    const activities=state.activity.filter(a=>a&&typeof a==="object"&&inPrevMonth(a.date)).slice(0,6).map(a=>a.text);const monthName=new Intl.DateTimeFormat("es-ES",{month:"long",year:"numeric"}).format(previousMonth);const report={monthKey:`${py}-${pm+1}`,monthName:monthName.charAt(0).toUpperCase()+monthName.slice(1),income,expenses,net:income-expenses,newBrothers,activities};
-    const active=state.brothers.filter(b=>/activ[oa]/i.test(b.status||"")).length;
-    const quotas=active*18;
+
+    // Cobro mensual individual: los impagos quedan para gestionarlos desde Secretaría.
+    ensureBrotherIds();
+    const activeBrothers=state.brothers.filter(isActiveBrother);
+    let quotaIncome=0, unpaidThisMonth=0;
+    activeBrothers.forEach(b=>{
+      const debtMonths=Math.max(0,Number(b.quotaDebtMonths)||0);
+      if(debtMonths>0){
+        b.quotaDebtMonths=debtMonths+1;
+        b.quotaStatus="Cuota pendiente";
+        unpaidThisMonth++;
+      }else if(Math.random()<0.88){
+        addTransaction(`Cuota mensual — ${b.name}`,18,"ingreso",closingDate);
+        b.quotaStatus="Al corriente";
+        b.lastQuotaMonth=reportMonthKey;
+        quotaIncome+=18;
+      }else{
+        b.quotaDebtMonths=1;
+        b.quotaStatus="Cuota pendiente";
+        b.quotaDueMonth=reportMonthKey;
+        unpaidThisMonth++;
+        log(`${b.name} tiene una cuota mensual pendiente. Secretaría debe gestionarla.`);
+      }
+    });
+
+    const active=activeBrothers.length;
+    const community=120+active*8+Math.round(state.reputation*1.3);
+    addTransaction("Donativos y colaboración del barrio",community,"ingreso",closingDate);
     const upkeep=state.inventory.reduce((sum,item)=>sum+Math.min(60,Math.max(3,Math.round((Number(item.price)||0)*0.001))),0);
     const churchCost=state.church&&state.church.owned?650:0;
     const houseCost=state.house?(state.house.type==="rented"?700:({0:0,1:350,2:750,3:1250}[Number(state.house.level)||0]||0)):0;
-    let operating=250+upkeep+churchCost+houseCost;if(state.difficulty==="tranquila")operating=Math.round(operating*.9);if(state.difficulty==="exigente")operating=Math.round(operating*1.15);
-    if(quotas)addTransaction(`Cuotas mensuales (${active} hermanos)`,quotas,"ingreso");
-    const community=120+active*8+Math.round(state.reputation*1.3);addTransaction("Donativos y colaboración del barrio",community,"ingreso");
-    addTransaction("Gastos ordinarios, conservación y sedes",-operating,"gasto");
-    const churchValues={"iglesia-historica":65000,capilla:150000,basilica:350000};const houseValues={small:45000,medium:95000,large:185000};
-    const ownedValue=(state.church&&state.church.owned?(churchValues[state.church.type]||0):0)+(state.house&&state.house.type!=="rented"?(houseValues[state.house.type]||0):0);const propertySupport=Math.round(ownedValue*0.003);if(propertySupport>0)addTransaction("Donativos vinculados al patrimonio",propertySupport,"ingreso");
+    let operating=250+upkeep+churchCost+houseCost;
+    if(state.difficulty==="tranquila")operating=Math.round(operating*.9);
+    if(state.difficulty==="exigente")operating=Math.round(operating*1.15);
+    addTransaction("Gastos ordinarios, conservación y sedes",-operating,"gasto",closingDate);
+    const churchValues={"iglesia-historica":65000,capilla:150000,basilica:350000};
+    const houseValues={small:45000,medium:95000,large:185000};
+    const ownedValue=(state.church&&state.church.owned?(churchValues[state.church.type]||0):0)+(state.house&&state.house.type!=="rented"?(houseValues[state.house.type]||0):0);
+    const propertySupport=Math.round(ownedValue*0.003);
+    if(propertySupport>0)addTransaction("Donativos vinculados al patrimonio",propertySupport,"ingreso",closingDate);
+
+    // La reputación también sufre altibajos por rumores, pequeños errores y expectativas del barrio.
+    // Cuanto mayor es la exposición pública, más probable es que aparezca una crítica ocasional.
+    const publicIncidents=[
+      "comentarios por avisos publicados tarde",
+      "críticas por una decisión poco explicada",
+      "un rumor que circula entre los hermanos",
+      "quejas por falta de coordinación en una actividad",
+      "malestar en el barrio por una respuesta tardía",
+      "preguntas públicas sobre la gestión de un proyecto"
+    ];
+    const repBeforeIncident=Number(state.reputation)||0;
+    const incidentChance=repBeforeIncident>=90?0.48:repBeforeIncident>=70?0.38:repBeforeIncident>=40?0.27:0.15;
+    if(Math.random()<incidentChance){
+      const incident=publicIncidents[Math.floor(Math.random()*publicIncidents.length)];
+      const loss=repBeforeIncident>=70?2+Math.floor(Math.random()*4):1+Math.floor(Math.random()*3);
+      state.reputation=Math.max(0,repBeforeIncident-loss);
+      log(`Incidencia reputacional: ${incident}. La imagen pública baja ${Math.min(loss,repBeforeIncident)} puntos.`,closingDate.toISOString());
+    }
     if(state.reputation<30){state.reputation=Math.max(0,state.reputation-1);log("La reputación baja dificulta la colaboración de la feligresía.");}
-    log(`Cierre mensual: cuotas ${money(quotas)}, donativos ${money(community+propertySupport)} y gastos ${money(operating)}.`);
-    const monthIndex=d.getFullYear()*12+d.getMonth();if(typeof state.lastElectionMonth!=="number")state.lastElectionMonth=monthIndex;if(monthIndex-state.lastElectionMonth>=6)state.electionDue=true;
-    report.economy={quotas,community,operating,propertySupport};state.lastMonthlyReportKey=report.monthKey;return report;
+    log(`Cierre mensual: ${money(quotaIncome)} en cuotas cobradas, ${unpaidThisMonth} hermanos con cuotas pendientes, ${money(community+propertySupport)} en donativos y ${money(operating)} en gastos.`);
+
+    // Generar el balance una vez registrados los movimientos económicos del mes que acaba.
+    const previousTransactions=state.transactions.filter(t=>inPrevMonth(t.date)&&!/saldo inicial|tesorería inicial/i.test(t.concept||""));
+    const income=previousTransactions.filter(t=>t.amount>0).reduce((a,t)=>a+t.amount,0);
+    const expenses=previousTransactions.filter(t=>t.amount<0).reduce((a,t)=>a+Math.abs(t.amount),0);
+    const newBrothers=state.brothers.filter(b=>b.joinedAt&&inPrevMonth(b.joinedAt)).map(b=>b.name);
+    const activities=state.activity.filter(a=>a&&typeof a==="object"&&inPrevMonth(a.date)).slice(0,6).map(a=>a.text);
+    const monthName=new Intl.DateTimeFormat("es-ES",{month:"long",year:"numeric"}).format(previousMonth);
+    const report={monthKey:reportMonthKey,monthName:monthName.charAt(0).toUpperCase()+monthName.slice(1),income,expenses,net:income-expenses,newBrothers,activities,economy:{quotas:quotaIncome,expectedQuotas:active*18,unpaidBrothers:unpaidThisMonth,community,operating,propertySupport}};
+    const monthIndex=d.getFullYear()*12+d.getMonth();
+    if(typeof state.lastElectionMonth!=="number")state.lastElectionMonth=monthIndex;
+    if(monthIndex-state.lastElectionMonth>=24)state.electionDue=true;
+    state.lastMonthlyReportKey=report.monthKey;
+    return report;
+  }
+  function estimateMonthlyEconomy(){
+    const active=state.brothers.filter(isActiveBrother).length;
+    const quotaPayers=state.brothers.filter(b=>isActiveBrother(b)&&(Number(b.quotaDebtMonths)||0)===0).length;
+    const expectedQuotas=Math.round(quotaPayers*18*0.88);
+    const community=120+active*8+Math.round(state.reputation*1.3);
+    const upkeep=state.inventory.reduce((sum,item)=>sum+Math.min(60,Math.max(3,Math.round((Number(item.price)||0)*0.001))),0);
+    const churchCost=state.church&&state.church.owned?650:0;
+    const houseCost=state.house?(state.house.type==="rented"?700:({0:0,1:350,2:750,3:1250}[Number(state.house.level)||0]||0)):0;
+    let expenses=250+upkeep+churchCost+houseCost;
+    if(state.difficulty==="tranquila")expenses=Math.round(expenses*.9);
+    if(state.difficulty==="exigente")expenses=Math.round(expenses*1.15);
+    const churchValues={"iglesia-historica":65000,capilla:150000,basilica:350000};
+    const houseValues={small:45000,medium:95000,large:185000};
+    const ownedValue=(state.church&&state.church.owned?(churchValues[state.church.type]||0):0)+(state.house&&state.house.type!=="rented"?(houseValues[state.house.type]||0):0);
+    const propertySupport=Math.round(ownedValue*0.003);
+    const income=expectedQuotas+community+propertySupport;
+    return {active,quotaPayers,expectedQuotas,community,propertySupport,income,expenses,projected:state.balance+income-expenses};
   }
   function renderShop(){const cat=$("filtro-categoria").value;const tier=$("filtro-nivel")?.value||"Todos";const list=products.filter(p=>(cat==="Todas"||p.category===cat)&&(tier==="Todos"||p.tier===tier)&&!state.inventory.some(i=>i.id===p.id));$("catalogo-tienda").innerHTML=list.map(p=>`<article class="shop-card"><div class="product-art" aria-hidden="true">${p.icon}</div><span class="event-meta">${esc(p.category)} · ${esc(p.tier)} · Calidad ${p.quality}/100</span><h4>${esc(p.name)}</h4><p>${esc(p.desc)}</p><div class="price">${money(p.price)}</div><div class="card-actions"><button class="btn primary" data-buy="${p.id}">Comprar</button><button class="btn secondary" data-details="${p.id}">Detalles</button></div></article>`).join("")||'<div class="empty">No hay artículos en esta categoría pendientes de compra.</div>';}
   function buyProduct(id){const p=products.find(x=>x.id===id);if(!p)return;if(state.balance<p.price){toast("No hay saldo suficiente para comprar este artículo.");return;}openModal(`<h3>Confirmar compra</h3><div class="product-art">${p.icon}</div><p>¿Quieres comprar <strong>${esc(p.name)}</strong> por <strong>${money(p.price)}</strong>?</p><p class="muted">El importe se descontará de la tesorería y el artículo pasará al inventario.</p><div class="event-actions"><button class="btn primary" id="confirmar-compra">Confirmar compra</button><button class="btn secondary" id="cancelar-compra">Cancelar</button></div>`);$("confirmar-compra").onclick=()=>{if(state.balance<p.price){closeModal();toast("Saldo insuficiente.");return;}addTransaction("Compra: "+p.name,-p.price,"gasto");state.inventory.push({...p,condition:p.quality,bought:dateText(new Date(state.date))});log("Comprado: "+p.name);save();closeModal();renderAll();toast("Artículo añadido al patrimonio.");};$("cancelar-compra").onclick=closeModal;}
@@ -222,7 +383,12 @@
   function maintain(id){const item=state.inventory.find(i=>i.id===id);if(!item)return;if(state.balance<25){toast("No hay saldo suficiente para el mantenimiento.");return;}addTransaction("Mantenimiento: "+item.name,-25,"gasto");item.condition=Math.min(100,item.condition+18);log("Mantenimiento realizado: "+item.name);save();renderAll();toast("El estado de conservación ha mejorado.");}
   function renderCleanGame(){if(!cleanTask){const item=state.inventory[Math.floor(Math.random()*state.inventory.length)];cleanTask={id:item?.id||null,step:0,score:0,tool:null};}const item=state.inventory.find(i=>i.id===cleanTask.id);if(!item){$("minijuego-limpieza").innerHTML='<p>No hay enseres disponibles. Compra o añade patrimonio para empezar.</p>';return;}const steps=[{q:"¿Qué debes hacer antes de limpiar?",opts:["Inspeccionar el material y el estado","Aplicar el producto más fuerte","Frotar sin revisar"],good:0,tip:"La inspección ayuda a evitar daños."},{q:"¿Qué procedimiento es más prudente para un metal delicado?",opts:["Producto específico y paño suave","Estropajo abrasivo","Empaparlo y dejarlo secar solo"],good:0,tip:"Usa productos adecuados al material."},{q:"Al terminar, ¿qué debes hacer?",opts:["Secar, revisar y registrar el estado","Guardar el enser húmedo","No comprobar el resultado"],good:0,tip:"El secado y la revisión previenen deterioros."}];const s=steps[cleanTask.step];$("minijuego-limpieza").innerHTML=`<div class="product-art">${item.icon||"🕯️"}</div><span class="event-meta">ACTIVIDAD ${cleanTask.step+1} DE ${steps.length}</span><h4>${esc(item.name)}</h4><p>Estado actual: ${item.condition}% de conservación</p><h4>${s.q}</h4><div class="event-actions">${s.opts.map((o,i)=>`<button class="btn secondary" data-clean="${i}">${esc(o)}</button>`).join("")}</div><p class="muted">Cada decisión afecta al resultado de la actividad.</p>`;}
   function cleanAnswer(n){const steps=[{good:0,tip:"La inspección ayuda a evitar daños."},{good:0,tip:"Usa productos adecuados al material."},{good:0,tip:"El secado y la revisión previenen deterioros."}];if(n===steps[cleanTask.step].good)cleanTask.score+=1;else cleanTask.score-=1;cleanTask.step++;if(cleanTask.step>=steps.length){const item=state.inventory.find(i=>i.id===cleanTask.id);if(item){if(cleanTask.score>=2){item.condition=Math.min(100,item.condition+12);state.reputation=Math.min(100,state.reputation+2);log("Limpieza correcta de "+item.name);}else{item.condition=Math.max(0,item.condition-8);log("La limpieza de "+item.name+" requiere repetir la tarea.");} }const score=cleanTask.score;cleanTask=null;save();renderAll();openModal(`<h3>Actividad finalizada</h3><p>Resultado: <strong>${score>=2?"Buen trabajo":score===1?"Resultado mejorable":"Necesita más cuidado"}</strong></p><p>${score>=2?"El enser ha mejorado su conservación.":"El estado del enser se ha resentido. Revisa los procedimientos antes de intentarlo de nuevo."}</p><button class="btn primary" id="fin-limpieza">Volver a priostía</button>`);$("fin-limpieza").onclick=closeModal;}else{renderCleanGame();}}
-  function renderTreasury(){$("historial-economico").innerHTML=state.transactions.slice(0,30).map(t=>`<div class="list-row"><strong>${esc(t.concept)}</strong><small>${esc(dateText(new Date(t.date)))} · ${t.type==="ingreso"?'<span class="success">+':''}${money(t.amount)}${t.type==="ingreso"?"</span>":""}</small></div>`).join("")||'<div class="empty">Todavía no hay movimientos.</div>';}
+  function renderTreasury(){
+    const p=estimateMonthlyEconomy();
+    const host=$("estimacion-tesoreria");
+    if(!host)return;
+    host.innerHTML=`<article class="treasury-forecast"><div class="forecast-heading"><div><span class="event-meta">PREVISIÓN ECONÓMICA</span><h4>Estimación del próximo cierre mensual</h4></div><span class="forecast-seal">€</span></div><div class="forecast-grid"><div><span>Cuotas previstas</span><strong>${money(p.expectedQuotas)}</strong><small>${p.quotaPayers} hermanos al corriente · 18 € por cuota · cobro estimado del 88 %</small></div><div><span>Donativos previstos</span><strong>${money(p.community+p.propertySupport)}</strong><small>Colaboración del barrio y patrimonio</small></div><div><span>Gastos ordinarios</span><strong class="danger">−${money(p.expenses)}</strong><small>Conservación, sedes y funcionamiento</small></div></div><div class="forecast-closing"><span>Saldo estimado al cierre</span><strong class="${p.projected>=0?"success":"danger"}">${money(p.projected)}</strong></div><p class="muted">Es una previsión orientativa de un mes tipo, no un movimiento registrado. Los ingresos y gastos del juego se aplican automáticamente; desde Tesorería no se puede ingresar ni retirar dinero manualmente.</p></article>`;
+  }
   function makeCalendar(){const d=new Date(state.date),p=phase(d);const base=[{name:"Revisión de inventario",kind:"Priostía"},{name:"Reunión de junta",kind:"Gobierno"},{name:"Revisión de cuotas",kind:"Secretaría"}];const pool=activities.filter(a=>p.cuaresma?a.season==="cuaresma":true);const chosen=[...pool].sort(()=>Math.random()-.5).slice(0,4);state.calendar=chosen.map((a,i)=>({name:a.name,kind:a.kind,date:dateText(new Date(d.getTime()+i*86400000)),cost:a.cost,rep:a.rep,done:false}));}
   function renderSedes(){
     if(!state.church)state.church={name:"Iglesia asignada",type:"assigned",owned:false};
@@ -302,8 +468,7 @@
   $("btn-generar-evento").addEventListener("click",()=>{generateEvent("manual");renderAll();section("eventos");});
   $("btn-nueva-solicitud").addEventListener("click",()=>{makeRequest();section("hermanos");});
   $("filtro-categoria").addEventListener("change",renderShop);$("filtro-nivel")?.addEventListener("change",renderShop);
-  $("form-movimiento").addEventListener("submit",e=>{e.preventDefault();const concept=$("concepto").value.trim(),amount=Number($("importe").value),type=$("tipo-movimiento").value;if(!concept||!Number.isFinite(amount)||amount<=0){toast("Introduce un concepto y un importe válido.");return;}const delta=type==="ingreso"?amount:-amount;if(delta<0&&state.balance<Math.abs(delta)){toast("No hay saldo suficiente para ese gasto.");return;}addTransaction(concept,delta,type);log((type==="ingreso"?"Ingreso: ":"Gasto: ")+concept);save();e.target.reset();renderAll();toast("Movimiento registrado.");});
-  document.body.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.dataset.loadSave)loadSaveById(b.dataset.loadSave);if(b.dataset.deleteSave)deleteSaveById(b.dataset.deleteSave);if(b.dataset.event)resolveEvent(b.dataset.event,Number(b.dataset.choice));if(b.dataset.modalEvent){const id=b.dataset.modalEvent,choice=Number(b.dataset.modalChoice);closeModal();resolveEvent(id,choice);section("eventos");}if(b.dataset.monthlyClose!==undefined){closeModal(true);}if(b.dataset.electionCandidate){resolveElection(b.dataset.electionCandidate);}if(b.dataset.createMode==="random"){const names=["Hermandad de la Aurora","Hermandad del Consuelo","Hermandad de la Luz","Hermandad del Buen Camino","Hermandad de San Gabriel","Hermandad del Amparo","Hermandad de la Paz","Hermandad de la Esperanza del Barrio"];const difficulties=["tranquila","equilibrada","exigente"];startNew({name:names[Math.floor(Math.random()*names.length)],difficulty:difficulties[Math.floor(Math.random()*difficulties.length)]});}if(b.dataset.case)handleCase(b.dataset.case);if(b.dataset.buy)buyProduct(b.dataset.buy);if(b.dataset.details){const p=products.find(x=>x.id===b.dataset.details);if(p)openModal(`<div class="product-art">${p.icon}</div><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><p>Categoría: ${esc(p.category)}</p><p>Calidad: ${p.quality}/100</p><p class="price">${money(p.price)}</p>`);}if(b.dataset.inspect){const p=state.inventory.find(x=>x.id===b.dataset.inspect);if(p)openModal(`<div class="product-art">${p.icon||"🏵️"}</div><h3>${esc(p.name)}</h3><p>${esc(p.desc||"Bien inventariado en la hermandad.")}</p><p>Fecha de adquisición: ${esc(p.bought||"Sin fecha")}</p><p>Conservación: ${p.condition}%</p><p>Calidad: ${p.quality}/100</p>`);}if(b.dataset.campaign)runCampaign(b.dataset.campaign);if(b.dataset.sede)changeSede(b.dataset.sede);if(b.dataset.maintain)maintain(b.dataset.maintain);if(b.dataset.clean!==undefined)cleanAnswer(Number(b.dataset.clean));if(b.dataset.activity!==undefined)doActivity(Number(b.dataset.activity));});
+  document.body.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.dataset.quotaPay)registerQuotaPayment(b.dataset.quotaPay);if(b.dataset.quotaExpel)expelBrotherForNonpayment(b.dataset.quotaExpel);if(b.id==="btn-solicitar-papeletas")requestPapeletas();if(b.dataset.loadSave)loadSaveById(b.dataset.loadSave);if(b.dataset.deleteSave)deleteSaveById(b.dataset.deleteSave);if(b.dataset.event)resolveEvent(b.dataset.event,Number(b.dataset.choice));if(b.dataset.modalEvent){const id=b.dataset.modalEvent,choice=Number(b.dataset.modalChoice);closeModal();resolveEvent(id,choice);section("eventos");}if(b.dataset.monthlyClose!==undefined){closeModal(true);}if(b.dataset.electionCandidate){resolveElection(b.dataset.electionCandidate);}if(b.dataset.createMode==="random"){const names=["Hermandad de la Aurora","Hermandad del Consuelo","Hermandad de la Luz","Hermandad del Buen Camino","Hermandad de San Gabriel","Hermandad del Amparo","Hermandad de la Paz","Hermandad de la Esperanza del Barrio"];const difficulties=["tranquila","equilibrada","exigente"];startNew({name:names[Math.floor(Math.random()*names.length)],difficulty:difficulties[Math.floor(Math.random()*difficulties.length)]});}if(b.dataset.case)handleCase(b.dataset.case);if(b.dataset.buy)buyProduct(b.dataset.buy);if(b.dataset.details){const p=products.find(x=>x.id===b.dataset.details);if(p)openModal(`<div class="product-art">${p.icon}</div><h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p><p>Categoría: ${esc(p.category)}</p><p>Calidad: ${p.quality}/100</p><p class="price">${money(p.price)}</p>`);}if(b.dataset.inspect){const p=state.inventory.find(x=>x.id===b.dataset.inspect);if(p)openModal(`<div class="product-art">${p.icon||"🏵️"}</div><h3>${esc(p.name)}</h3><p>${esc(p.desc||"Bien inventariado en la hermandad.")}</p><p>Fecha de adquisición: ${esc(p.bought||"Sin fecha")}</p><p>Conservación: ${p.condition}%</p><p>Calidad: ${p.quality}/100</p>`);}if(b.dataset.campaign)runCampaign(b.dataset.campaign);if(b.dataset.sede)changeSede(b.dataset.sede);if(b.dataset.maintain)maintain(b.dataset.maintain);if(b.dataset.clean!==undefined)cleanAnswer(Number(b.dataset.clean));if(b.dataset.activity!==undefined)doActivity(Number(b.dataset.activity));});
   $("cerrar-modal").addEventListener("click",closeModal);$("modal").addEventListener("click",e=>{if(e.target===$("modal"))closeModal();});
   if("serviceWorker" in navigator && location.protocol!=="file:")window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
   migrateOldSave();
