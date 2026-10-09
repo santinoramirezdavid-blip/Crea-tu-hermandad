@@ -1,0 +1,10 @@
+{
+  "name": "Simulador Cofrade Beta",
+  "short_name": "Cofrade Beta",
+  "description": "Simulador de gestión de una hermandad de Semana Santa.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#071629",
+  "theme_color": "#071629",
+  "icons": []
+}

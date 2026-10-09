@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="description" content="Simulador Cofrade: gestiona una hermandad sevillana.">
+  <title>Simulador Cofrade — Beta 2.9</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+<div id="app">
+  <section id="pantalla-inicio" class="screen start-screen">
+    <div class="start-card">
+      <p class="eyebrow">SEVILLA · SEMANA SANTA</p><div class="cross-mark">✦</div>
+      <h1>Simulador <span>Cofrade</span> <small class="beta-label">BETA</small></h1>
+      <p class="lead">Dirige tu hermandad. Cuida a tus hermanos, conserva el patrimonio y prepara cada Cuaresma.</p>
+      <div class="start-actions"><button id="btn-nueva" class="btn primary">Nueva partida</button></div>
+      <p id="estado-guardado" class="muted">Tus partidas se guardan en este dispositivo.</p>
+      <div class="saved-games-wrap"><h3 class="saved-games-title">Mis partidas</h3><div id="lista-partidas" class="saved-games-list"></div></div>
+    </div>
+  </section>
+
+  <section id="pantalla-juego" class="game-screen hidden">
+    <header class="topbar">
+      <div><p class="eyebrow">HERMANDAD Y COFRADÍA</p><h2 id="nombre-hermandad">Hermandad del Consuelo</h2></div>
+      <div class="top-actions"><button id="btn-play" class="btn small primary">▶ Play</button><button id="btn-guardar" class="btn small secondary">Guardar</button><button id="btn-salir" class="btn small ghost">Salir</button></div>
+    </header>
+    <div class="status-strip">
+      <div><span>FECHA</span><strong id="fecha-actual">1 de septiembre de 2026</strong></div>
+      <div><span>TESORERÍA</span><strong id="saldo-cabecera">12.000 €</strong></div>
+      <div><span>HERMANOS</span><strong id="total-hermanos">128</strong></div>
+      <div><span>REPUTACIÓN</span><strong id="reputacion">65/100</strong></div>
+    </div>
+    <nav class="nav-tabs" aria-label="Secciones">
+      <div class="sidebar-brand" aria-label="Simulador Cofrade">
+        <div class="brand-crest" aria-hidden="true"><svg viewBox="0 0 60 76"><path d="M30 5 37 14 46 12 44 23 52 30 44 37 46 48 37 46 30 57 23 46 14 48 16 37 8 30 16 23 14 12 23 14Z"/><path d="M30 17v28M20 27h20M24 38l6 6 6-6M24 22l6-5 6 5"/><circle cx="30" cy="30" r="17"/></svg></div>
+        <div class="brand-title">SIMULADOR<span>COFRADE</span><small>SEVILLA · TU HERMANDAD</small></div>
+      </div>
+      <div class="nav-section-label">MENÚ PRINCIPAL</div>
+      <button class="nav-btn active" data-section="resumen"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span><span class="nav-text">Resumen</span></button>
+      <button class="nav-btn" data-section="eventos"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3m-3 3h6"/></svg></span><span class="nav-text">Eventos</span> <span id="eventos-badge" class="badge nav-badge">0</span></button>
+      <button class="nav-btn" data-section="hermanos"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 19v-1.5a4.5 4.5 0 0 0-4.5-4.5h-2A4.5 4.5 0 0 0 3 17.5V19M8.5 9a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4ZM16 3.2a3 3 0 0 1 0 5.8M17 13h.5a3.5 3.5 0 0 1 3.5 3.5V19"/></svg></span><span class="nav-text">Secretaría</span></button>
+      <button class="nav-btn" data-section="tienda"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 3h2l2.2 11.2a2 2 0 0 0 2 1.6h8.1a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg></span><span class="nav-text">Tienda</span></button>
+      <button class="nav-btn" data-section="patrimonio"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 18h14M6 18V9m4 9V9m4 9V9m4 9V9M3 7l9-4 9 4v2H3z"/></svg></span><span class="nav-text">Patrimonio</span></button>
+      <button class="nav-btn" data-section="priostia"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 21V9m8 12V9M6 9h4M14 9h4M8 5c-1.4 1.2-1.4 2.5 0 3.5C9.4 7.5 9.4 6.2 8 5Zm8 0c-1.4 1.2-1.4 2.5 0 3.5 1.4-1 1.4-2.3 0-3.5ZM5 21h6m2 0h6M12 3v3m-2-1h4"/></svg></span><span class="nav-text">Priostía</span></button>
+      <button class="nav-btn" data-section="tesoreria"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v5c0 1.7 3.6 3 8 3 1.4 0 2.7-.2 3.8-.5M4 10v5c0 1.7 3.6 3 8 3M4 15v4c0 1.7 3.6 3 8 3m4-8c0-1.7 1.8-3 4-3s4 1.3 4 3-1.8 3-4 3-4-1.3-4-3Zm0 0v4c0 1.7 1.8 3 4 3s4-1.3 4-3v-4"/></svg></span><span class="nav-text">Tesorería</span></button>
+      <button class="nav-btn" data-section="calendario"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/><path d="m9 15 2 2 4-4"/></svg></span><span class="nav-text">Calendario</span></button>
+      <button class="nav-btn" data-section="sedes"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s7-7.1 7-13a7 7 0 0 0-14 0c0 5.9 7 13 7 13Z"/><circle cx="12" cy="9" r="2.3"/></svg></span><span class="nav-text">Sedes y estación</span></button>
+      <div class="sidebar-footer" aria-hidden="true"><div class="sidebar-phrase">«No es solo una hermandad,<br>es una forma de vida»</div><div class="sidebar-giralda"></div><div class="sidebar-footer-label">SEVILLA · ES SEMANA SANTA</div></div>
+    </nav>
+    <main class="main-content">
+      <section id="section-resumen" class="section active">
+        <div class="section-heading"><div><p class="eyebrow">ESTADO DE LA CORPORACIÓN</p><h3>Casa de Hermandad</h3></div><button id="btn-avanzar-dia" class="btn primary">Avanzar un día →</button></div>
+        <p id="texto-resumen" class="intro"></p>
+        <div class="dashboard-welcome"><div class="welcome-copy"><span class="welcome-kicker">EL LATIDO DE LA HERMANDAD</span><h4>Tradición, compromiso y devoción.</h4><p>Organiza el día a día, cuida el patrimonio y prepara a tus hermanos para una nueva Semana Santa.</p></div><div class="welcome-seal" aria-hidden="true"><svg viewBox="0 0 160 180"><path d="M80 10 95 27 117 22 112 45 130 61 112 77 117 100 95 95 80 112 65 95 43 100 48 77 30 61 48 45 43 22 65 27Z"/><path d="M52 132h56M58 124V83h10V69h7V51h10v18h7v14h10v41M51 132h58M64 99h32M64 111h32M75 51V41h10v10M72 41h16M80 34v7"/><circle cx="80" cy="61" r="44"/></svg></div></div>
+        <div id="resumen-cards" class="stats-grid"></div>
+        <div class="two-col"><article class="panel"><h4>Próximos compromisos</h4><div id="proximos-eventos"></div></article><article class="panel"><h4>Actividad reciente</h4><div id="actividad-reciente"></div></article></div>
+      </section>
+
+      <section id="section-eventos" class="section">
+        <div class="section-heading"><div><p class="eyebrow">DECISIONES DE LA JUNTA</p><h3>Eventos de la hermandad</h3></div><button id="btn-generar-evento" class="btn secondary">Buscar novedades</button></div>
+        <p class="intro">Los acontecimientos dependen de la fecha, la economía y el estado de la hermandad. Decide cómo actuar y asume las consecuencias.</p>
+        <div id="lista-eventos" class="event-list"></div>
+      </section>
+
+      <section id="section-hermanos" class="section">
+        <div class="section-heading"><div><p class="eyebrow">SECRETARÍA</p><h3>Admisión de hermanos</h3></div><button id="btn-nueva-solicitud" class="btn primary">Recibir expediente</button></div>
+        <p class="intro">Revisa los datos, detecta incidencias y decide si aceptas, solicitas subsanación o rechazas una solicitud.</p>
+        <div id="expediente-actual"></div><h4>Hermanos censados</h4><div id="lista-hermanos" class="item-list"></div>
+      </section>
+
+      <section id="section-tienda" class="section">
+        <div class="section-heading"><div><p class="eyebrow">PROVEEDORES Y TALLERES</p><h3>Tienda de patrimonio</h3></div><div class="money-chip" id="saldo-tienda">12.000 € disponibles</div></div>
+        <p class="intro">Compra enseres, pasos, candelería, bordados e imaginería para ampliar el patrimonio. Los artículos tienen precios, calidad y efectos distintos; cada compra se descuenta de la tesorería.</p>
+        <div class="filter-row"><label for="filtro-categoria">Categoría</label><select id="filtro-categoria"><option value="Todas">Todas</option><option>Pasos</option><option>Candelería</option><option>Enseres</option><option>Bordados y textiles</option><option>Flores y exorno</option><option>Mantenimiento</option><option>Imaginería</option><option>Altar e imaginería</option></select><label for="filtro-nivel">Nivel</label><select id="filtro-nivel"><option value="Todos">Todos los niveles</option><option>Básico</option><option>Intermedio</option><option>Avanzado</option><option>Premium</option></select></div>
+        <div id="catalogo-tienda" class="shop-grid"></div>
+      </section>
+
+      <section id="section-patrimonio" class="section">
+        <div class="section-heading"><div><p class="eyebrow">INVENTARIO</p><h3>Patrimonio de la hermandad</h3></div></div>
+        <p class="intro">Inspecciona los bienes, comprueba su conservación y programa tareas de mantenimiento.</p><div id="inventario" class="shop-grid"></div>
+      </section>
+
+      <section id="section-priostia" class="section">
+        <div class="section-heading"><div><p class="eyebrow">TALLER DE PRIוסטÍA</p><h3>Limpieza y preparación de enseres</h3></div></div>
+        <p class="intro">Elige un enser y completa una actividad de mantenimiento. Utilizar un procedimiento inadecuado puede dañar el objeto.</p>
+        <div id="minijuego-limpieza" class="panel"></div>
+      </section>
+
+      <section id="section-tesoreria" class="section">
+        <div class="section-heading"><div><p class="eyebrow">MAYORDOMÍA</p><h3>Tesorería</h3></div></div>
+        <div class="money-hero"><span>Saldo disponible</span><strong id="saldo-grande">12.000 €</strong></div>
+        <form id="form-movimiento" class="form-grid"><label>Concepto<input id="concepto" maxlength="80" required placeholder="Ej. Donativo de un hermano"></label><label>Importe (€)<input id="importe" type="number" min="0.01" step="0.01" required></label><label>Tipo<select id="tipo-movimiento"><option value="ingreso">Ingreso</option><option value="gasto">Gasto</option></select></label><button class="btn primary" type="submit">Registrar movimiento</button></form>
+        <h4>Historial económico</h4><div id="historial-economico" class="item-list"></div>
+      </section>
+
+      <section id="section-calendario" class="section">
+        <div class="section-heading"><div><p class="eyebrow">CICLO COFRADE</p><h3>Calendario anual</h3></div><button id="btn-avanzar-calendario" class="btn primary">Avanzar un día →</button></div>
+        <div id="fase-liturgica" class="season-card"></div><div id="lista-calendario" class="item-list"></div>
+      </section>
+
+      <section id="section-sedes" class="section">
+        <div class="section-heading"><div><p class="eyebrow">ORGANIZACIÓN Y PATRIMONIO</p><h3>Sedes, casa hermandad y estación de penitencia</h3></div></div>
+        <p class="intro">Elige dónde reside la hermandad, invierte en una casa propia y prepara el recorrido de cada Semana Santa. Los cambios tienen costes y quedan guardados en tu partida.</p>
+        <div id="gestion-sedes" class="item-list"></div>
+        <div id="plan-estacion" class="panel"></div>
+      </section>
+    </main>
+  </section>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true"><div class="modal-card"><button id="cerrar-modal" class="modal-close" aria-label="Cerrar">×</button><div id="modal-contenido"></div></div></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="app.js"></script>
+</body>
+</html>

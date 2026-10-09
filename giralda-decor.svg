@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 620" fill="none">
+ <defs><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0b1"/><stop offset=".42" stop-color="#d6a84b"/><stop offset="1" stop-color="#8d6427"/></linearGradient><linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#dcae54" stop-opacity=".5"/><stop offset="1" stop-color="#07182b" stop-opacity=".1"/></linearGradient></defs>
+ <g stroke="url(#gold)" stroke-linejoin="round" stroke-linecap="round">
+  <!-- Giralda bell tower and upper belfry -->
+  <path stroke-width="2.6" d="M112 590V235h18v-29h14v-30h14v-30h22v30h14v30h14v29h18v355Z" fill="url(#shade)"/>
+  <path stroke-width="1.8" d="M105 590h135M112 563h122M112 530h122M112 495h122M112 460h122M112 425h122M112 390h122M112 355h122M112 320h122M112 285h122M112 250h122"/>
+  <path stroke-width="1.6" d="M132 235v-24h14v-26h14v-25h22v25h14v26h14v24M137 209h67M151 185h44M160 160v-14h22v14M164 146v-20h14v20M160 126h22M167 126v-12h8v12M171 114V96"/>
+  <path stroke-width="2.2" d="M167 96h8l-4-13Z" fill="url(#gold)"/>
+  <!-- belfry arches -->
+  <path stroke-width="1.5" d="M126 260h26v-11a13 13 0 0 0-26 0v11ZM184 260h26v-11a13 13 0 0 0-26 0v11ZM126 295h26v-11a13 13 0 0 0-26 0v11ZM184 295h26v-11a13 13 0 0 0-26 0v11Z"/>
+  <path stroke-width="1.3" d="M126 332h26v-15h-26ZM184 332h26v-15h-26M126 367h26v-15h-26ZM184 367h26v-15h-26M126 402h26v-15h-26ZM184 402h26v-15h-26M126 437h26v-15h-26ZM184 437h26v-15h-26M126 472h26v-15h-26ZM184 472h26v-15h-26M126 507h26v-15h-26ZM184 507h26v-15h-26M126 542h26v-15h-26ZM184 542h26v-15h-26"/>
+  <!-- façade and tiny windows -->
+  <path stroke-width="1.1" d="M160 270h22v15h-22ZM160 305h22v15h-22ZM160 340h22v15h-22ZM160 375h22v15h-22ZM160 410h22v15h-22ZM160 445h22v15h-22ZM160 480h22v15h-22ZM160 515h22v15h-22ZM160 550h22v15h-22"/>
+  <!-- cathedral silhouette and palms -->
+  <path stroke-width="1.6" d="M36 590V520l16-22 16 22v70M27 590h72M57 498v-23M57 475l-13-15M57 475l15-19M57 475l-1-24M255 590V535l17-22 17 22v55M249 590h53M272 513v-26M272 487l-14-17M272 487l17-18M272 487l-2-23"/>
+  <path stroke-width="1.3" d="M0 591c54-14 88 8 136 0s93-8 133 0 64 2 91-4M0 604h360M10 615h340" opacity=".6"/>
+  <path stroke-width="1" d="M30 580h11m15 0h12m194 0h12m17 0h12" opacity=".6"/>
+ </g>
+</svg>
