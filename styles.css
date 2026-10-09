@@ -239,3 +239,31 @@ button{transition:transform .18s ease,background .18s ease,border-color .18s eas
 }
 /* Reemplaza la torre genérica anterior por una ilustración reconocible de la Giralda */
 .start-screen:before{right:4%;bottom:-16px;width:min(36vw,360px);height:min(72vh,520px);opacity:.48;background-repeat:no-repeat;background-position:center bottom;background-size:contain;background-image:url("giralda-decor.svg");filter:drop-shadow(0 0 18px rgba(227,187,100,.1))}
+
+/* Crea tu Hermandad: brand and new interaction panels */
+.brand-crest{display:flex;align-items:center;justify-content:center;overflow:visible}
+.brand-nazareno-logo{display:block;width:100%;height:100%;object-fit:contain;object-position:center;filter:drop-shadow(0 0 5px rgba(226,180,79,.18))}
+.cross-mark{display:flex;justify-content:center;align-items:center;height:92px;margin:4px 0 16px;color:var(--gold)}
+.home-nazareno-logo{height:100%;width:auto;max-width:88px;object-fit:contain;filter:drop-shadow(0 0 9px rgba(225,181,82,.16))}
+.start-card h1{font-size:clamp(2.25rem,6vw,3.8rem)}
+.start-card h1 span{display:block;color:var(--gold)}
+.current-balance-box{display:flex;flex-direction:column;gap:4px;border:1px solid rgba(214,180,107,.45);border-radius:12px;padding:13px 15px;margin:14px 0;background:linear-gradient(120deg,rgba(214,180,107,.1),rgba(6,20,36,.25))}
+.current-balance-box span{font-size:.7rem;letter-spacing:.12em;color:var(--muted)}
+.current-balance-box strong{font:700 1.45rem Georgia,serif;color:var(--gold2)}
+.monthly-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
+.monthly-stats>div{border:1px solid var(--line);background:#0b1a2c;border-radius:10px;padding:12px}
+.monthly-stats span{display:block;color:var(--muted);font-size:.8rem}
+.monthly-stats strong{display:block;margin-top:5px;font-size:1.1rem}
+.monthly-activity{padding-left:20px;color:var(--muted);font-size:.9rem}
+.monthly-activity li{margin:6px 0}
+.election-panel,.election-result,.create-mode-card{border:1px solid rgba(214,180,107,.35);border-radius:12px;padding:15px;margin:14px 0;background:rgba(7,22,41,.72)}
+.election-panel h4,.create-mode-card h4{margin:0 0 8px;color:var(--gold2)}
+.election-panel .event-actions small{display:block;font-weight:500;font-size:.7rem;margin-top:3px}
+.create-hermandad>p{color:var(--muted)}
+.create-mode-card p{color:var(--muted);margin:6px 0 12px}
+.create-mode-card>.btn{width:100%}
+.create-form{display:grid;gap:12px}
+.create-form label{display:grid;gap:6px;color:var(--muted);font-size:.88rem}
+.create-form input,.create-form select{width:100%;background:#09182a;color:var(--cream);border:1px solid var(--line);border-radius:8px;padding:11px}
+.btn:disabled{opacity:.48;cursor:not-allowed;transform:none}
+@media(max-width:520px){.monthly-stats{grid-template-columns:1fr}.brand-nazareno-logo{max-height:58px}.cross-mark{height:80px}}

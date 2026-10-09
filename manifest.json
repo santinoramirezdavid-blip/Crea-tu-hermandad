@@ -1,7 +1,7 @@
 {
-  "name": "Simulador Cofrade Beta",
-  "short_name": "Cofrade Beta",
-  "description": "Simulador de gestión de una hermandad de Semana Santa.",
+  "name": "Crea tu Hermandad",
+  "short_name": "Crea tu Hermandad",
+  "description": "Crea y gestiona tu propia hermandad de Semana Santa.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#071629",

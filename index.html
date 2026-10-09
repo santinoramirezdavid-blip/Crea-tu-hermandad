@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#101a2b">
-  <meta name="description" content="Simulador Cofrade: gestiona una hermandad sevillana.">
-  <title>Simulador Cofrade — Beta 2.9</title>
+  <meta name="description" content="Crea tu Hermandad: funda y gestiona una hermandad de Semana Santa.">
+  <title>Crea tu Hermandad — Gestión cofrade</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -14,10 +14,10 @@
 <div id="app">
   <section id="pantalla-inicio" class="screen start-screen">
     <div class="start-card">
-      <p class="eyebrow">SEVILLA · SEMANA SANTA</p><div class="cross-mark">✦</div>
-      <h1>Simulador <span>Cofrade</span> <small class="beta-label">BETA</small></h1>
-      <p class="lead">Dirige tu hermandad. Cuida a tus hermanos, conserva el patrimonio y prepara cada Cuaresma.</p>
-      <div class="start-actions"><button id="btn-nueva" class="btn primary">Nueva partida</button></div>
+      <p class="eyebrow">SEVILLA · SEMANA SANTA</p><div class="cross-mark"><img src="./nazareno-cabeza.png" alt="" class="home-nazareno-logo"></div>
+      <h1>Crea tu <span>Hermandad</span></h1>
+      <p class="lead">Funda tu propia hermandad, toma decisiones, cuida a tus hermanos y prepara una nueva Semana Santa.</p>
+      <div class="start-actions"><button id="btn-nueva" class="btn primary">Crear hermandad</button></div>
       <p id="estado-guardado" class="muted">Tus partidas se guardan en este dispositivo.</p>
       <div class="saved-games-wrap"><h3 class="saved-games-title">Mis partidas</h3><div id="lista-partidas" class="saved-games-list"></div></div>
     </div>
@@ -35,9 +35,9 @@
       <div><span>REPUTACIÓN</span><strong id="reputacion">65/100</strong></div>
     </div>
     <nav class="nav-tabs" aria-label="Secciones">
-      <div class="sidebar-brand" aria-label="Simulador Cofrade">
-        <div class="brand-crest" aria-hidden="true"><svg viewBox="0 0 60 76"><path d="M30 5 37 14 46 12 44 23 52 30 44 37 46 48 37 46 30 57 23 46 14 48 16 37 8 30 16 23 14 12 23 14Z"/><path d="M30 17v28M20 27h20M24 38l6 6 6-6M24 22l6-5 6 5"/><circle cx="30" cy="30" r="17"/></svg></div>
-        <div class="brand-title">SIMULADOR<span>COFRADE</span><small>SEVILLA · TU HERMANDAD</small></div>
+      <div class="sidebar-brand" aria-label="Crea tu Hermandad">
+        <div class="brand-crest" aria-hidden="true"><img src="./nazareno-cabeza.png" alt="" class="brand-nazareno-logo"></div>
+        <div class="brand-title">CREA TU<span>HERMANDAD</span><small>SEVILLA · SEMANA SANTA</small></div>
       </div>
       <div class="nav-section-label">MENÚ PRINCIPAL</div>
       <button class="nav-btn active" data-section="resumen"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span><span class="nav-text">Resumen</span></button>
